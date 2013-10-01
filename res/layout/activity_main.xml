@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Kamus Multi Bahasa"
+        />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        />
+    <TextView 
+        android:id="@+id/selection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText 
+        android:text=""
+        android:id="@+id/txtInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button 
+        android:text="Terjemahkan"
+        android:id="@+id/btnTerjemah"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getTerjemahan"
+        />
+    <ListView
+        android:id="@+id/output"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"
+        />
+</LinearLayout>
